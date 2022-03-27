@@ -140,7 +140,7 @@ $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\
 }
 /*Watermark*/
 div[class*="typeWindows-"]::after {
-	content: 'DRACONICXYSILENCE version 37';
+	content: 'DRACONICXYSILENCE version 37.5';
   font-weight: bold;
 	line-height: 30px;
 	color: var(--Main-Color);

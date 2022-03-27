@@ -15,7 +15,7 @@ $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\
 --Third-Color: rgb(120,0,0);
 --Black: rgb(0,0,0);
 --White: rgb(255,255,255);
---background1: url/*('https://c4.wallpaperflare.com/wallpaper/163/392/912/map-wold-map-technology-world-wallpaper-preview.jpg')*/('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg');
+--background1: url('https://c4.wallpaperflare.com/wallpaper/163/392/912/map-wold-map-technology-world-wallpaper-preview.jpg');
 --background2: red;
 --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--background1)50% 50%/cover !important;
 --loop-gif: url('https://c.tenor.com/2oQwi7vJz9wAAAAC/loop-space.gif'); /*Used in files background*/

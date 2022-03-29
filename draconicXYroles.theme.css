@@ -1,7 +1,7 @@
 /**
  * @name draconicXYroles
  * @author dey@elitegamers.ro
- * @version ersion 38.1b
+ * @version ersion 38.2
  * @description Want something different? DraconicXYroles is the choice.
  *
  * @website https://github.com/ytddey/
@@ -69,28 +69,3 @@ $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\
 /*edited only this one below*/
 --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 }
-  /*
-$$\      $$\             $$\                                                           $$\       
-$$ | $\  $$ |            $$ |                                                          $$ |      
-$$ |$$$\ $$ | $$$$$$\  $$$$$$\    $$$$$$\   $$$$$$\  $$$$$$\$$$$\   $$$$$$\   $$$$$$\  $$ |  $$\ 
-$$ $$ $$\$$ | \____$$\ \_$$  _|  $$  __$$\ $$  __$$\ $$  _$$  _$$\  \____$$\ $$  __$$\ $$ | $$  |
-$$$$  _$$$$ | $$$$$$$ |  $$ |    $$$$$$$$ |$$ |  \__|$$ / $$ / $$ | $$$$$$$ |$$ |  \__|$$$$$$  / 
-$$$  / \$$$ |$$  __$$ |  $$ |$$\ $$   ____|$$ |      $$ | $$ | $$ |$$  __$$ |$$ |      $$  _$$<  
-$$  /   \$$ |\$$$$$$$ |  \$$$$  |\$$$$$$$\ $$ |      $$ | $$ | $$ |\$$$$$$$ |$$ |      $$ | \$$\ 
-\__/     \__| \_______|   \____/  \_______|\__|      \__| \__| \__| \_______|\__|      \__|  \__|
-*/
-div[class*="typeWindows-"]::after {
-    content: 'DRACONXYROLES version 38.1b';
-    font-weight: bold;
-    line-height: 30px;
-    color: var(--Main-Color);
-    font-size: 13.5px;
-    position: absolute;
-    padding: 0 15px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background: transparent;
-    z-index: -1;
-  }

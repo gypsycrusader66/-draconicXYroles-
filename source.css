@@ -1,66 +1,12 @@
-/*
- $$$$$$\  $$\           $$\                 $$\           
-$$  __$$\ $$ |          $$ |                $$ |          
-$$ /  \__|$$ | $$$$$$\  $$$$$$$\   $$$$$$\  $$ | $$$$$$$\ 
-$$ |$$$$\ $$ |$$  __$$\ $$  __$$\  \____$$\ $$ |$$  _____|
-$$ |\_$$ |$$ |$$ /  $$ |$$ |  $$ | $$$$$$$ |$$ |\$$$$$$\  
-$$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\ 
-\$$$$$$  |$$ |\$$$$$$  |$$$$$$$  |\$$$$$$$ |$$ |$$$$$$$  |
- \______/ \__| \______/ \_______/  \_______|\__|\_______/ 
-*/
-:root {
-/*Global variables that were made by me*/
---Main-Color: rgb(250,0,0);
---Secondary-Color: rgb(150,0,0);
---Third-Color: rgb(120,0,0);
---Grey-Color: rgb(31, 31, 31);
---Black: rgb(0,0,0);
---White: rgb(255,255,255);
-/*Backgrounds*/
---background1: url('https://c4.wallpaperflare.com/wallpaper/163/392/912/map-wold-map-technology-world-wallpaper-preview.jpg');
---background2: red;
---background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--background1)50% 50%/cover !important;
---background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg');
---background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg');
-/*Gifs for popouts and stuff*/
---loop-gif: url('https://c.tenor.com/2oQwi7vJz9wAAAAC/loop-space.gif'); /*Used in files background*/
---loop-gif2: url('https://64.media.tumblr.com/16314eedf67c43cc5cb711ffe8c0b08e/22caaa59656e483e-b3/s640x960/7f706f80fb11b3390532fea23ffca444a6f3ea32.gifv'); /*Used in guild popouts > User popout*/
---loop-gif3: url('https://i.pinimg.com/originals/d5/a7/cb/d5a7cb46e2f15a8fed10aaf1dd00965c.gif');
---loop-gif4: url('https://64.media.tumblr.com/8da032603a2ff3343c32833d7959e7bc/tumblr_p61tzgchCN1qeyvpto1_500.gifv'); /*Used in guild popouts > Mentioned card*/
---loop-gif5: url('https://64.media.tumblr.com/998b664cb9fd89a155b3b105dbdc9a09/808262fefad64e38-9c/s500x750/5f09d008c448b11092d119bf69d0751e08d79631.gifv'); /*Used in popouts (emoji, set status)*/
---loop-gif-diamond: url('https://giffiles.alphacoders.com/143/14390.gif'); /*Used on home icon*/
-/*Borders*/
---border1: 2px solid var(--Secondary-Color);
---border2: 2px solid var(--Third-Color);
-
-/*Others variables*/
-/*Radial status*/
---rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
---rs-medium-spacing: 0.1px; /* Gap between avatar and status for User popout | MUST end in px */
---rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
---rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
---rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
---rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
---rs-avatar-shape: 50%; /* 50% for round - 0% for square */
---rs-online-color: #21df00; /* Colour for online status */
---rs-idle-color: #ffffff; /* Colour for idle status */
---rs-dnd-color: #ee0000; /* Colour for dnd status */
---rs-offline-color: #636b75; /* Colour for offline status */
---rs-streaming-color: #b300fa; /* Colour for streaming status */
---rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
---rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
---rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-}
-
-/*Discord's global variables copy, paste and edited*/
+/*Discord's global variables copy-paste and edited*/
 .theme-dark, .theme-light {
-  --info-positive-background: transparent!important /*hsla(139,calc(var(--saturation-factor, 1)*47.3%),43.9%,0.1)*/;
-  --info-positive-foreground: transparent!important /*hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%)*/;
-  --info-warning-background: transparent!important /*hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1)*/;
-  --info-warning-foreground: transparent!important /*hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%)*/;
-  --info-danger-background: transparent!important /*hsla(359,calc(var(--saturation-factor, 1)*82.6%),59.4%,0.1)*/;
-  --info-danger-foreground: transparent!important /*hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%)*/;
-  --status-positive-background: transparent!important /*hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%)*/;
+  --info-positive-background: transparent!important;
+  --info-positive-foreground: transparent!important;
+  --info-warning-background: transparent!important;
+  --info-warning-foreground: transparent!important;
+  --info-danger-background: transparent!important;
+  --info-danger-foreground: transparent!important;
+  --status-positive-background: transparent!important;
   --status-positive-text: #fff;
   --status-warning-background: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
   --status-danger-background: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
@@ -123,7 +69,7 @@ $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\
   --channels-default: #8e9297;
   --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
   --channeltextarea-background: transparent;
-  --activity-card-background: #202225; /*need to change*/
+  --activity-card-background: #202225;
   --textbox-markdown-syntax: #8e9297;
   --spoiler-revealed-background: #292b2f;
   --spoiler-hidden-background: #202225;
@@ -137,22 +83,6 @@ $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\
   --deprecated-text-input-border-hover: #040405;
   --deprecated-text-input-border-disabled: #202225;
   --deprecated-text-input-prefix: #dcddde;
-}
-/*Watermark*/
-div[class*="typeWindows-"]::after {
-	content: 'DRACONICXYSILENCE version 37.5';
-  font-weight: bold;
-	line-height: 30px;
-	color: var(--Main-Color);
-	font-size: 13.5px;
-	position: absolute;
-	padding: 0 15px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 20px;
-	background: transparent;
-	z-index: -1;
 }
 /*
 $$$$$$$\                      $$\                                                               $$\ 
@@ -168,16 +98,16 @@ $$$$$$$  |\$$$$$$$ |\$$$$$$$\ $$ | \$$\ \$$$$$$$ |$$ |      \$$$$$$  |\$$$$$$  |
                                          \______/
 */
 .appMount-3lHmkl, body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--background1)50% 50%/cover !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important;
   background-color: transparent!important;
   text-rendering: optimizeLegibility;
 }
 .appMount-2yBXZl, body {
-  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)) , var(--background1)50% 50%/cover !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)) , var(--master-background)50% 50%/cover !important;
   background-color: transparent!important;
   text-rendering: optimizeLegibility;
 }
-
+  
 /*
  $$$$$$\            $$\ $$\       $$\           
 $$  __$$\           \__|$$ |      $$ |          
@@ -186,163 +116,43 @@ $$ |$$$$\ $$ |  $$ |$$ |$$ |$$  __$$ |$$  _____|
 $$ |\_$$ |$$ |  $$ |$$ |$$ |$$ /  $$ |\$$$$$$\  
 $$ |  $$ |$$ |  $$ |$$ |$$ |$$ |  $$ | \____$$\ 
 \$$$$$$  |\$$$$$$  |$$ |$$ |\$$$$$$$ |$$$$$$$  |
- \______/  \______/ \__|\__| \_______|\_______/                        
+ \______/  \______/ \__|\__| \_______|\_______/
 */
-/*Guild Roles*/
-/* Default permissions */
-.container-_phMUq {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  color: var(--Main-Color);
-  border-radius: 0px;
-  padding: 16px 24px 16px 16px;
-  cursor: pointer;
-}
-.container-_phMUq:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: var(--Black-Color);
-  color: var(--Main-Color);
-  border-radius: 0px;
-  padding: 16px 24px 16px 16px;
-  cursor: pointer;
-}
-/* Search Roles */
-.container-cMG81i {
-  border-radius: 4px;
-  overflow: hidden;
-  background-color: transparent;
-}
-/*Roles Column Margins*/
-.rolesList-3uZoaa {
-  margin-bottom: 20px;
-}
-/*Roles margin left-right*/
-.role-2TIOKu {
-  font-size: 12px;
-  font-weight: 500;
-  background: var(--background-secondary-alt);
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 22px;
-  margin: 0 4px 4px 0;
-  padding: 4px;
-  margin-right: 200px;
-}
-/*Roles card in guilds*/
-.userPopout-2j1gM4 {
-  -webkit-box-shadow: var(--elevation-high);
-  box-shadow: var(--elevation-high);
-  background-color: var(--background-floating);
-  border-radius: 8px;
-  border-color: var(--Main-Color);
-  overflow: hidden;
-  max-height: calc(100vh - 20px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-/*+ add roles popout*/
-.container-2O1UgZ {
-  width: 250px;
-  overflow: hidden;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 8px;
-  background-color: var(--Black);
-  border: var(--border2);
-}
 
+/* #################### User popout in guilds #################### */
 /*User popout*/
 .userPopout-2j1gM4 {
-  -webkit-box-shadow: var(--elevation-high);
-  box-shadow: var(--elevation-high);
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2)50% 50%/cover !important;
-  border: var(--Border2);
-  border-color: var(--Main-Color);
-  overflow: hidden;
-  max-height: calc(100vh - 20px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
-/*Message Input Area*/
-.channelTextArea-1FufC0 {
-  margin-bottom: 24px;
-  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)) , var(--loop-gif3)10% 10%/cover !important;;
+/*The "+" popout, add roles*/
+.container-2O1UgZ {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)) , var(--background-black-and-white1)50% 50%/cover no-repeat!important;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
-/*Unread popout*/
+
+/* #################### Guilds unread & mentioned popouts #################### */
+/*Unread*/
 .unread-2wipsx {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif)50% 50%/cover !important;
   opacity: .9;
   border: solid 2px var(--Secondary-Color);
 }
-/*Metioned popout*/
+/*Metioned*/
 .mention-3XBnnZ {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif4)50% 50%/cover !important;
   opacity: .9;
   border-radius: 5px;
   border-color:var(--Black);
 }
-/*Guild Channel Slow Mode warning*/
+
+/* #################### Guild Channel Slow Mode warning ####################*/
 .base-3bcbY3 .cooldownWrapper-2k1jHK {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: auto;
-  white-space: nowrap;
-  overflow: hidden;
   color: var(--Main-Color)!important;
 }
 
-/*Server settings, Roles > Sidebar */
-.sidebarRegion-VFTUkN {
-  -ms-flex: 1 0 0px;
-  flex: 1 0 0px;
-  z-index: 1;
-  -ms-flex-pack: end;
-}
-.sidebarRegion-VFTUkN {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-box-pack: end;
-  justify-content: flex-end;
-}
-.sidebarRegionScroller-3MXcoP {
-  display: flex;
-}
-/*Bigger role list*/
-.list-I3aHXn {
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  min-height: 0;
-  padding: 0 0px 0px 0px;
-}
 /*Guild folders*/
 .expandedFolderBackground-1kSAf6 {
   position: absolute;
@@ -351,76 +161,268 @@ $$ |  $$ |$$ |  $$ |$$ |$$ |$$ |  $$ | \____$$\
   bottom: 0px;
   width: 50px;
   border-radius: 20px;
-  -webkit-transition: background-color .15s ease-out;
-  transition: background-color .15s ease-out;
   background: var(--Black);
   border: solid 2px var(--Secondary-Color);
 }
-
+/*Closed guilds folder blur effect*/
+.closedFolderIconWrapper-3tRb2d {
+  filter: blur(3px);
+}
 /*Guild info popout when hover (Thanks Disease)*/
 .tooltip-14MtrL {
   background: var(--Black)!important;
   border: var(--border2)!important;
-}
-/*and the white thing before the guild icon*/
-.item-2LIpTv {
-  position: absolute;
-  display: block;
-  width: 8px;
-  border-radius: 0 4px 4px 0;
-  margin-left: -4px;
-  background-color: var(--Secondary-Color);
+  border-radius: 15px;
 }
 
-/*Guild hover on voice channel popout (playing, listening to spotify)*/
+/*In guild hover on voice channel popout (playing, listening to spotify)*/
 .container-8Futzw {
-  width: 280px;
-  border-radius: 5px;
-  margin-left: 16px;
-  padding: 0 16px;
-  max-height: 360px;
-  -webkit-box-shadow: var(--elevation-high);
-  box-shadow: var(--elevation-high);
   background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)) , var(--background-black-and-white1)50% 50%/cover !important;
-  border: var(--border2);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
-
 /*In guild channel, roles acces*/
 .role-23oyrw {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: auto;
-  padding: 4px 8px;
-  font-size: 12px;
-  line-height: 16px;
   color: var(--text-normal);
   background-color: transparent;
   border: var(--border2);
+  border-radius: 15px;
 }
 
 /*
-$$$$$$$$\           $$\                           $$\                 $$$$$$$$\           $$\       
-$$  _____|          \__|                          $$ |                \__$$  __|          $$ |      
-$$ |       $$$$$$\  $$\  $$$$$$\  $$$$$$$\   $$$$$$$ | $$$$$$$\          $$ |    $$$$$$\  $$$$$$$\  
-$$$$$\    $$  __$$\ $$ |$$  __$$\ $$  __$$\ $$  __$$ |$$  _____|         $$ |    \____$$\ $$  __$$\ 
-$$  __|   $$ |  \__|$$ |$$$$$$$$ |$$ |  $$ |$$ /  $$ |\$$$$$$\           $$ |    $$$$$$$ |$$ |  $$ |
-$$ |      $$ |      $$ |$$   ____|$$ |  $$ |$$ |  $$ | \____$$\          $$ |   $$  __$$ |$$ |  $$ |
-$$ |      $$ |      $$ |\$$$$$$$\ $$ |  $$ |\$$$$$$$ |$$$$$$$  |         $$ |   \$$$$$$$ |$$$$$$$  |
-\__|      \__|      \__| \_______|\__|  \__| \_______|\_______/          \__|    \_______|\_______/ 
-*/
-/*Main container background*/
-.theme-dark .container-2cd8Mz {
-  background-color: transparent;
+ $$$$$$\                                                            $$$$$$\              $$\       $$\     $$\                               
+$$  __$$\                                                          $$  __$$\             $$ |      $$ |    \__|                              
+$$ /  \__| $$$$$$\   $$$$$$\  $$\    $$\  $$$$$$\   $$$$$$\        $$ /  \__| $$$$$$\  $$$$$$\   $$$$$$\   $$\ $$$$$$$\   $$$$$$\   $$$$$$$\ 
+\$$$$$$\  $$  __$$\ $$  __$$\ \$$\  $$  |$$  __$$\ $$  __$$\       \$$$$$$\  $$  __$$\ \_$$  _|  \_$$  _|  $$ |$$  __$$\ $$  __$$\ $$  _____|
+ \____$$\ $$$$$$$$ |$$ |  \__| \$$\$$  / $$$$$$$$ |$$ |  \__|       \____$$\ $$$$$$$$ |  $$ |      $$ |    $$ |$$ |  $$ |$$ /  $$ |\$$$$$$\  
+$$\   $$ |$$   ____|$$ |        \$$$  /  $$   ____|$$ |            $$\   $$ |$$   ____|  $$ |$$\   $$ |$$\ $$ |$$ |  $$ |$$ |  $$ | \____$$\ 
+\$$$$$$  |\$$$$$$$\ $$ |         \$  /   \$$$$$$$\ $$ |            \$$$$$$  |\$$$$$$$\   \$$$$  |  \$$$$  |$$ |$$ |  $$ |\$$$$$$$ |$$$$$$$  |
+ \______/  \_______|\__|          \_/     \_______|\__|             \______/  \_______|   \____/    \____/ \__|\__|  \__| \____$$ |\_______/ 
+                                                                                                                         $$\   $$ |
+                                                                                                                         \$$$$$$  |
+                                                                                                                          \______/
+Sidebar > Category headers ("Guild name", "Community", "User Management") colors*/
+.header-2Kx1US {
+  color: var(--Main-Color);
+}
+/*Sidebar > Sub-category colors*/
+/*Default*/
+.brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG {
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP) {
+  background-color: var(--Third-Color);
 }
 
-/*Private call*/
-.border-2BJQjd.speaking-3RWJBr {
-  -webkit-box-shadow: inset 0 0 0 2px hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%),inset 0 0 0 3px var(--Secondary-Color);
-  box-shadow: inset 0 0 0 2px hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%),inset 0 0 0 3px var(--Secondary-Color);
+/*All buttons*/
+.container-2nx-BQ {
+  opacity: 0.3;
+  background-color: var(--Secondary-Color)!important;
+}
+
+/* #################### Overview #################### */
+/*All spacers*/
+.theme-dark .divider--oiTeJ {
+  border-color: var(--Third-Color);
+}
+
+/*Server overview*/
+.defaultColor-2cKwKo {
+  color: var(--Main-Color);
+}
+
+/*All titles ("Server name", "Inactive channel", "Inactive timeout", "System message channel", "Default notification settings", "Server banned background lvl2", "Server invite background lvl1")*/
+.h5-2RwDNl {
+  color: var(--Main-Color);
+}
+
+/*All disabled dropdowns*/
+.select-1Ia3hD, .wrapper-1b33hy {
+  color: var(--Secondary-Color);
+}
+
+/*All sub dropdowns*/
+.colorStandard-21JIj7 {
+  color: var(--Secondary-Color);
+}
+
+/*Remove button under the photo*/
+.removeButton-2apMfV {
+  color: var(--Main-Color);
+}
+.removeButton-2apMfV:hover {
+  color: var(--Secondary-Color);
+}
+
+/*Photo description*/
+.description-30xx7u, .labelDescriptor-34wZ-z {
+  color: var(--Main-Color);
+}
+
+/*Upload Image button*/
+.theme-dark .lookOutlined-3yKVGo.colorPrimary-2AuQVo {
+  color: var(--Main-Color);
+  border-color: var(--border2);
+}
+.theme-dark .lookOutlined-3yKVGo.colorPrimary-2AuQVo:hover {
+  color: var(--Secondary-Color);
+  border-color: var(--border3);
+}
+
+/*System messages channel disabled messages*/
+.title-2dsDLn {
+  color: var(--Secondary-Color);
+}
+
+/*Default notification settings, circle buttons*/
+.radioIconForeground-2BMavi {
+  color: var(--Secondary-Color);
+}
+/*"All messages", "Only @mentions" text color*/
+.title-1yyp9V {
+  color: var(--Secondary-Color);
+}
+
+/*Display > Show boost progress bar*/
+.colorInteractiveActive-30E9n8 {
+  color: var(--Secondary-Color);
+}
+
+/*"Server banner background", "Server invite background", "Unlock with boosting" buttons color*/
+/*Normal*/
+.lookFilled-yCfaCM.colorGreen-3y-Z79 {
+  color: var(--Main-Color);
+  background-color: var(--Third-Color);
+}
+/*Hover*/
+.lookFilled-yCfaCM.colorGreen-3y-Z79:hover {
+  color: var(--Secondary-Color);
+  background-color: var(--Color-4);
+}
+
+/* #################### Roles #################### */
+/*The descriptions under "Roles", "Search Roles"*/
+.colorHeaderSecondary-g5teka {
+  color: var(--Secondary-Color);
+}
+/*Default Permissions, icon and description*/
+.icon-2DGsye {
+  color: var(--Secondary-Color);
+}
+/*"Default permissions" text*/
+.label-2Pe5f1 {
+  color: var(--Secondary-Color);
+}
+/*"@everyone * applies to all server members" text*/
+.size12-oc4dx4 {
+  color: var(--Secondary-Color);
+}
+
+/*The arrow icon*/
+.arrow-2v2Yl2 {
+  color: var(--Secondary-Color);
+}
+
+/*Search roles input*/
+.input-2m5SfJ {
+  color: var(--Secondary-Color);
+}
+
+/*Create role button*/
+/*Normal*/
+.lookFilled-yCfaCM.colorBrand-I6CyqQ {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Hover*/
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+  color: var(--Secondary-Color);
+  background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+
+/* ########## Roles > Default permissions tab ########## */
+/*Back button*/
+/*Normal*/
+.title-JU0E7C {
+  color: var(--Main-Color);
+}
+/*Hover*/
+.title-JU0E7C:hover {
+  color: var(--Secondary-Color);
+}
+
+/*Create new role "+" icon*/
+.addRole-viKZpC {
+  color: var(--Main-Color);
+}
+
+/*The container for edit role, display, permissions, manager members, edit role and the 3 dots*/
+.header-JUTO-g {
+  background-color: var(--Black);
+}
+
+/*Edit role <role-name>*/
+.titleText-35PD5k {
+  color: var(--Main-Color);
+}
+
+/*The 3 dots, the menu*/
+.menu-2p630X {
+  color: var(--Main-Color);
+}
+
+/*Role icon > Choose image button*/
+/*Normal*/
+.lookOutlined-3yKVGo.colorWhite-1H92hK {
+  color: var(--Main-Color);
+  border: var(--border2);
+}
+.lookOutlined-3yKVGo.colorWhite-1H92hK:hover {
+  color: var(--Secondary-Color);
+  border: var(--border3);
+}
+
+/*View server as role button*/
+/*Normal*/
+.theme-dark .lookFilled-yCfaCM.colorGrey-2iAG-B {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border: var(--border2);
+}
+/*Hover*/
+.theme-dark .lookFilled-yCfaCM.colorGrey-2iAG-B:hover {
+  color: var(--Secondary-Color);
+  background-color: transparent;
+  border: var(--border3);
+}
+
+/* #################### Community tab #################### */
+/*"Are you building a community?" text colors*/
+.wrapper-1HSdhi {
+  margin: 0;
+  color: var(--Main-Color);
+}
+/*"Grow your community", "Keep members engaged", "Stay informed" text colors*/
+.base-21yXnu {
+  font-weight: 600;
+  font-family: var(--font-display);
+  color: var(--Main-Color);
+}
+
+/* #################### Members tab #################### */
+/*"Display role" text color*/
+.quickSelectLabel-ArUyd9 {
+  color: var(--Main-Color);
+}
+/*"@everyone" text color*/
+.quickSelectValue-rmtkbe {
+  margin-left: 4px;
+  color: var(--Main-Color);
 }
 
 /*
@@ -432,20 +434,14 @@ $$ \$$$  $$ |$$$$$$$$ |$$ |  $$ |  $$ |    $$ |$$ /  $$ |$$ |  $$ |\$$$$$$\
 $$ |\$  /$$ |$$   ____|$$ |  $$ |  $$ |$$\ $$ |$$ |  $$ |$$ |  $$ | \____$$\ 
 $$ | \_/ $$ |\$$$$$$$\ $$ |  $$ |  \$$$$  |$$ |\$$$$$$  |$$ |  $$ |$$$$$$$  |
 \__|     \__| \_______|\__|  \__|   \____/ \__| \______/ \__|  \__|\_______/
-*/
-/* In guild channels*/
-/*Mentioned background*/
+In guild channels*/
+/*Mentioned background (the yellow name)*/
 .mentioned-Tre-dv {
   position: relative;
   background-color: var(--background-primary);
 }
 .mentioned-Tre-dv:before {
   background-color: var(--background-primary);
-}
-/*Metioned tag color*/
-.theme-dark .wrapper-1ZcZW- {
-  background: transparent!important;
-  color: var(--Main-Color)!important;
 }
 
 /*Unread mentioned badge after channel in guild*/
@@ -454,7 +450,28 @@ $$ | \_/ $$ |\$$$$$$$\ $$ |  $$ |  \$$$$  |$$ |\$$$$$$  |$$ |  $$ |$$$$$$$  |
 }
 .numberBadge-37OJ3S base-3IDx3L baseShapeRound-3epLEv children-1MGS9G {
   background-color: black!important;
-    width: 16px;
+  width: 16px;
+}
+
+/*
+$$$$$$$$\           $$\                           $$\                 $$$$$$$$\           $$\       
+$$  _____|          \__|                          $$ |                \__$$  __|          $$ |      
+$$ |       $$$$$$\  $$\  $$$$$$\  $$$$$$$\   $$$$$$$ | $$$$$$$\          $$ |    $$$$$$\  $$$$$$$\  
+$$$$$\    $$  __$$\ $$ |$$  __$$\ $$  __$$\ $$  __$$ |$$  _____|         $$ |    \____$$\ $$  __$$\ 
+$$  __|   $$ |  \__|$$ |$$$$$$$$ |$$ |  $$ |$$ /  $$ |\$$$$$$\           $$ |    $$$$$$$ |$$ |  $$ |
+$$ |      $$ |      $$ |$$   ____|$$ |  $$ |$$ |  $$ | \____$$\          $$ |   $$  __$$ |$$ |  $$ |
+$$ |      $$ |      $$ |\$$$$$$$\ $$ |  $$ |\$$$$$$$ |$$$$$$$  |         $$ |   \$$$$$$$ |$$$$$$$  |
+\__|      \__|      \__| \_______|\__|  \__| \_______|\_______/          \__|    \_______|\_______/ 
+Main container background*/
+.theme-dark .container-2cd8Mz {
+  background-color: transparent;
+}
+/*Activity cards background "In a voice channel"*/
+.theme-dark .inset-SbsSFp {
+  background-color: transparent;
+}
+.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
+  background-color: transparent;
 }
 
 /*
@@ -466,9 +483,7 @@ $$  __$$<  $$$$$$$ |$$ /  $$ |$$ | $$$$$$$ |$$ |       \____$$\   $$ |     $$$$$
 $$ |  $$ |$$  __$$ |$$ |  $$ |$$ |$$  __$$ |$$ |      $$\   $$ |  $$ |$$\ $$  __$$ |  $$ |$$\ $$ |  $$ | \____$$\ 
 $$ |  $$ |\$$$$$$$ |\$$$$$$$ |$$ |\$$$$$$$ |$$ |      \$$$$$$  |  \$$$$  |\$$$$$$$ |  \$$$$  |\$$$$$$  |$$$$$$$  |
 \__|  \__| \_______| \_______|\__| \_______|\__|       \______/    \____/  \_______|   \____/  \______/ \_______/ 
-*/
-
-/* Idle status to white status */
+Idle status color to white status color*/
 .status-2DiCMd {
   width: 100%;
   height: 100%;
@@ -479,7 +494,7 @@ $$ |  $$ |\$$$$$$$ |\$$$$$$$ |$$ |\$$$$$$$ |$$ |      \$$$$$$  |  \$$$$  |\$$$$$
   background-color: rgb(0,0,0) !important;
   color: rgb(0,0,0) !important;
 }
-
+  
 /*
  $$$$$$\    $$\     $$\                                     
 $$  __$$\   $$ |    $$ |                                    
@@ -489,14 +504,7 @@ $$ |  $$ |  $$ |    $$ |  $$ |$$$$$$$$ |$$ |  \__|\$$$$$$\
 $$ |  $$ |  $$ |$$\ $$ |  $$ |$$   ____|$$ |       \____$$\ 
  $$$$$$  |  \$$$$  |$$ |  $$ |\$$$$$$$\ $$ |      $$$$$$$  |
  \______/    \____/ \__|  \__| \_______|\__|      \_______/ 
-*/
-/* Hide Timestamps */
-.timestamp{display:none}
-.group-spacing-16 .divider-3_HH5L.hasContent-1_DUdQ {
-  display: none;
-}
-
-/*Edited text with timestamp (Thanks Obscure.#4719)*/
+Edited text with timestamp (Thanks Obscure.#4719)*/
 .timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
   content: " (" attr(aria-label) ")";
   color: var(--text-muted);
@@ -509,8 +517,17 @@ $$ |  $$ |  $$ |$$\ $$ |  $$ |$$   ____|$$ |       \____$$\
 display: none;
 }
 
-/* Titlebar */
-/*Titlebar top buttons colors. Close, rezise and hide*/
+/*
+$$$$$$$\                                                                              $$\     
+$$  __$$\                                                                             $$ |    
+$$ |  $$ | $$$$$$\   $$$$$$\  $$$$$$\$$$$\   $$$$$$\  $$$$$$$\   $$$$$$\  $$$$$$$\  $$$$$$\   
+$$$$$$$  |$$  __$$\ $$  __$$\ $$  _$$  _$$\  \____$$\ $$  __$$\ $$  __$$\ $$  __$$\ \_$$  _|  
+$$  ____/ $$$$$$$$ |$$ |  \__|$$ / $$ / $$ | $$$$$$$ |$$ |  $$ |$$$$$$$$ |$$ |  $$ |  $$ |    
+$$ |      $$   ____|$$ |      $$ | $$ | $$ |$$  __$$ |$$ |  $$ |$$   ____|$$ |  $$ |  $$ |$$\ 
+$$ |      \$$$$$$$\ $$ |      $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$$\ $$ |  $$ |  \$$$$  |
+\__|       \_______|\__|      \__| \__| \__| \_______|\__|  \__| \_______|\__|  \__|   \____/ 
+Permanent things that you always see.
+Titlebar top buttons colors. Close, rezise and hide*/
 .winButton-3UMjdg {
   color: var(--Main-Color);
 }
@@ -524,139 +541,95 @@ display: none;
   display: none;
 }
 
-/*Atachements (files)*/
+/*Message Input Area*/
+.channelTextArea-1FufC0 {
+  margin-bottom: 24px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)) , var(--loop-gif3)10% 10%/cover !important;;
+}
+
+/*Atachements*/
+/*Files*/
 .attachment-1PZZB2 {
-  border-color: var(--Secondary-Color);
-  border:  var(--border2);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
   background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)) , var(--loop-gif)50% 50%/cover !important;
+}
+/*Photos*/
+.originalLink-Azwuo9 {
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 
 /*"You are viewing older messages" popout*/
 .jumpToPresentBar-1cEnH0 {
-  bottom: 0;
-  border-radius: 8px 8px 0 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.35)) , var(--background-black-and-white1)50% 80%/cover !important;;
-  opacity: .95;
-  padding-bottom: 8px;
+  background: black;
 }
-/*"You are viewing older messages" text messages color*/
+/*"You are viewing older messages" color*/
 .barButtonMain-2GIx4o {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  display: block;
-  position: relative;
   color: var(--Main-Color);
 }
+/*"Jump To Present" color*/
 .barButtonAlt-TQoCdZ {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  font-weight: 600;
-  position: relative;
   color: var(--Main-Color);
 }
 
 /*Emoji popout*/
 .emojiPickerInExpressionPicker-2nOwH8 .emojiPicker-6YCk8a {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5)50% 100%/cover !important;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  grid-template-rows: auto 1fr auto;
-  height: 100%;
-  width: auto;
-}
-.contentWrapper-3vHNP2 {
-  background-color: transparent!important;
-  border-radius: 8px;
-  -webkit-box-shadow: var(--elevation-stroke),var(--elevation-high);
-  box-shadow: var(--elevation-stroke),var(--elevation-high);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  display: grid;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  grid-template-rows: 24px auto;
-  grid-row-gap: 8px;
-  height: 100%;
-  overflow: hidden;
-  padding-top: 16px;
-  position: relative;
-  z-index: 1;
 }
 /*Sticker & gif popouts*/
 .emojiPickerInExpressionPicker-2nOwH8, .wrapper-1NB3WY, .container-3u7RcY {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5)50% 100%/cover !important;
 }
-/*Nitro gift popout*/
+/*Gif popout, favorite fade*/
+.theme-dark .categoryFadeBlurple-1l49_Q, .theme-light .categoryFadeBlurple-1l49_Q {
+  background-color: transparent;
+}
+
+/*Nitro gift popout*/ /*Still need to work for the buttons and other thins*/
 .theme-dark .root-g14mjS {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5)50% 100%/cover !important;
   -webkit-box-shadow: 0 0 0 1px rgb(32 34 37 / 60%), 0 2px 10px 0 rgb(0 0 0 / 20%);
   box-shadow: 0 0 0 1px rgb(32 34 37 / 60%), 0 2px 10px 0 rgb(0 0 0 / 20%);
 }
 .tier2HeaderBackground-2XINxm {
-  background-image: /*-webkit-gradient(linear,left top,right top,from(hsl(270,calc(var(--saturation-factor, 1)*86.7%),70.6%)),to(hsl(342,calc(var(--saturation-factor, 1)*58%),72.9%)))*/ transparent!important;
-  background-image: /*linear-gradient(90deg,hsl(270,calc(var(--saturation-factor, 1)*86.7%),70.6%),hsl(342,calc(var(--saturation-factor, 1)*58%),72.9%))*/ transparent!important;
+  background-image: transparent!important;
+  background-image: transparent!important;
 }
 .theme-dark .footer-31IekZ {
-  background-color: /*#2f3136*/ transparent;
+  background-color: transparent;
 }
 
 /*Pinned messages popout*/
 .messagesPopoutWrap-3zryHW {
   background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)) , var(--loop-gif5)50% 50%/cover !important;
-  -webkit-box-shadow: var(--elevation-stroke),var(--elevation-high);
-  box-shadow: var(--elevation-stroke),var(--elevation-high);
-  width: 420px;
-  min-height: 200px;
-  border-radius: 4px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 0;
+}
+/*Inbox messages popout*/
+.container-2ebMPP {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Threads popout*/ 
+.browser-mnQ1T7 {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 
-/*Click on friend profile then hover on photo ["View Profile" fix]*/ /*still working*/
+/*Click on friend profile then hover on photo ["View Profile" fix]*/
 .avatarHint-k7pYop {
   position: absolute;
   top: 0%;
   left: 0%;
   opacity: 0;
-  -webkit-transition: opacity .1s ease;
-  transition: opacity .1s ease;
-  pointer-events: none;
 }
 
 /*Left click on friends tab popout*/
 .menu-1QACrS {
-  position: relative;
-  z-index: 1;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  cursor: default;
-  max-height: calc(100vh - 32px);
-  -webkit-box-shadow: var(--elevation-high);
-  box-shadow: var(--elevation-high);
   background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)) , var(--loop-gif5)50% 50%/cover !important;
-  border: var(--border1);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 /*Button clicked*/
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
@@ -673,46 +646,32 @@ display: none;
 /*Click on emoji for informations (in channels/dms)*/
 .popoutContainer-2wbmiM {
   width: 288px;
-  border: var(--border2);
-  overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , var(--background-black-and-white1)50% 50%/cover !important;
-  -webkit-box-shadow: var(--elevation-low);
-  box-shadow: var(--elevation-low);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  background: black;
 }
 
 /*Code blocks text format*/
 .markup-eYLPri code {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  text-indent: 0;
-  white-space: pre-wrap;
-  scrollbar-width: thin;
   scrollbar-color: var(--Secondary-Color);
-  background: transparent;
-  border: var(--border2);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)) , var(--background-black-and-white2)50% 50%/cover no-repeat!important;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 
 /*Timestamps everywhere*/
 .content-3spvdd {
-  display: block;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  padding: 2px 4px;
-  color: var(--text-normal);
-  background: transparent;
+  color: var(--text-muted);
+  background: black;
   border: var(--border2);
   padding: 3px;
-  line-height: 13px;
-  font-size: 12px;
-  margin-top: -1px;
-  font-weight: 600;
 }
 
 /*Emoji searching, matching When typing for an emoji in chat "ex: :wink"*/
 .theme-dark .autocomplete-3NRXG8 {
   background: var(--Black);
-  border: var(--border2);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 /*Found searched emoji, matched emoji*/
 .theme-dark .selected-3H3-RC {
@@ -726,32 +685,15 @@ display: none;
 }
 /*Also in this popout, the last thing thing from a button*/
 .option-ayUoaq:after {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 30px;
   display: none!important;
 }
 /*CTRL+F After search popout*/
 .searchResultsWrap-5RVOkx {
-  width: 418px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-  background-color: var(--background-secondary);
+  background-color: black;
   border: var(--border2);
+}
+.theme-dark .focused-2FU0YH {
+  background-color: transparent;
 }
 
 /*Disable home icon*/
@@ -760,7 +702,8 @@ display: none;
   width: 28px;
   height: 20px;
 }
-/*Make a custom background for home icon and for guilds with no photos*/
+
+/*Custom background for home icon and for guilds with no photos*/
 .childWrapper-1j_1ub {
   -webkit-transition: background-color .15s ease-out,color .15s ease-out;
   transition: background-color .15s ease-out,color .15s ease-out;

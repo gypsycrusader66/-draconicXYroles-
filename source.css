@@ -1,3 +1,15 @@
+/*Theme auto-update (Thanks Tropical#4355)*/
+:root {
+  --theme-version: "38.1b";
+}
+.bd-addon-card[id="draconicXYroles-card"] .bd-version {
+  font-size: 0;
+}
+.bd-addon-card[id="draconicXYroles-card"] .bd-version::after {
+  content: var(--theme-version)" ";
+  font-size: 14px;
+}
+
 /*Discord's global variables copy-paste and edited*/
 .theme-dark, .theme-light {
   --info-positive-background: transparent!important;

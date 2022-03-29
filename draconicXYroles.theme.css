@@ -1,7 +1,7 @@
 /**
  * @name draconicXYroles
  * @author dey@elitegamers.ro
- * @version ersion 38.1
+ * @version ersion 38.1b
  * @description Want something different? DraconicXYroles is the choice.
  *
  * @website https://github.com/ytddey/
@@ -68,19 +68,7 @@ $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\
 --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
 /*edited only this one below*/
 --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-
-
-/*Theme auto-update (Thanks Tropical#4355)*/
-  --theme-version: "38.1";
 }
-.bd-addon-card[id="draconicXYroles-card"] .bd-version {
-  font-size: 0;
-}
-.bd-addon-card[id="draconicXYroles-card"] .bd-version::after {
-  content: var(--theme-version)" ";
-  font-size: 14px;
-}
-
   /*
 $$\      $$\             $$\                                                           $$\       
 $$ | $\  $$ |            $$ |                                                          $$ |      
@@ -92,7 +80,7 @@ $$  /   \$$ |\$$$$$$$ |  \$$$$  |\$$$$$$$\ $$ |      $$ | $$ | $$ |\$$$$$$$ |$$ 
 \__/     \__| \_______|   \____/  \_______|\__|      \__| \__| \__| \_______|\__|      \__|  \__|
 */
 div[class*="typeWindows-"]::after {
-    content: 'DRACONXYROLES version 38.1';
+    content: 'DRACONXYROLES version 38.1b';
     font-weight: bold;
     line-height: 30px;
     color: var(--Main-Color);

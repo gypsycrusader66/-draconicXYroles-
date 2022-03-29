@@ -1,15 +1,4 @@
-/*Theme auto-update (Thanks Tropical#4355)*/
-:root {
-  --theme-version: "38.2";
-}
-.bd-addon-card[id="draconicXYroles-card"] .bd-version {
-  font-size: 0;
-}
-.bd-addon-card[id="draconicXYroles-card"] .bd-version::after {
-  content: var(--theme-version)" ";
-  font-size: 14px;
-}
-  /*
+/*
 $$\      $$\             $$\                                                           $$\       
 $$ | $\  $$ |            $$ |                                                          $$ |      
 $$ |$$$\ $$ | $$$$$$\  $$$$$$\    $$$$$$\   $$$$$$\  $$$$$$\$$$$\   $$$$$$\   $$$$$$\  $$ |  $$\ 
@@ -20,7 +9,7 @@ $$  /   \$$ |\$$$$$$$ |  \$$$$  |\$$$$$$$\ $$ |      $$ | $$ | $$ |\$$$$$$$ |$$ 
 \__/     \__| \_______|   \____/  \_______|\__|      \__| \__| \__| \_______|\__|      \__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: 'DRACONXYROLES version 38.2';
+  content: 'DRACONXYROLES version 38.5';
   font-weight: bold;
   line-height: 30px;
   color: var(--Main-Color);
@@ -33,6 +22,53 @@ div[class*="typeWindows-"]::after {
   height: 20px;
   background: transparent;
   z-index: -1;
+}
+:root {
+/*Global variables that were made/edited by me*/
+--Main-Color: rgb(250,0,0); /*main master color*/
+--Secondary-Color: rgb(150,0,0); /*secondary color*/
+--Third-Color: rgb(120,0,0); /*third color*/
+--Color-4: rgb(90,0,0); /*color number 4*/
+--Grey-Color: rgb(31, 31, 31); /*grey color*/
+--Black: rgb(0,0,0); /*black color*/
+--White: rgb(255,255,255); /*white color*/
+--Neon-Line: 150,0,0; /*master neon color*/
+--Neon-Rgb: var(--Neon-Line); /*neon node*/
+/*Backgrounds*/
+--master-background: url('https://c4.wallpaperflare.com/wallpaper/163/392/912/map-wold-map-technology-world-wallpaper-preview.jpg'); /*master background*/
+--background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
+--background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg'); /*background 3*/
+--background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg'); /*background 4*/
+/*Gifs for popouts and stuff*/
+--loop-gif: url('https://c.tenor.com/2oQwi7vJz9wAAAAC/loop-space.gif'); /*Used in files background*/
+--loop-gif2: url('https://64.media.tumblr.com/16314eedf67c43cc5cb711ffe8c0b08e/22caaa59656e483e-b3/s640x960/7f706f80fb11b3390532fea23ffca444a6f3ea32.gifv'); /*Used in guild popouts > User popout*/
+--loop-gif3: url('https://i.pinimg.com/originals/d5/a7/cb/d5a7cb46e2f15a8fed10aaf1dd00965c.gif'); /*Used in message area input*/
+--loop-gif4: url('https://64.media.tumblr.com/8da032603a2ff3343c32833d7959e7bc/tumblr_p61tzgchCN1qeyvpto1_500.gifv'); /*Used in guild popouts > Mentioned card*/
+--loop-gif5: url('https://64.media.tumblr.com/998b664cb9fd89a155b3b105dbdc9a09/808262fefad64e38-9c/s500x750/5f09d008c448b11092d119bf69d0751e08d79631.gifv'); /*Used in emoji, sticker, gif, nitro, pinned messages and left click on dm in friends tab*/
+--loop-gif-diamond: url('https://giffiles.alphacoders.com/143/14390.gif'); /*Used on home icon*/
+/*Borders*/
+--border1: 2px solid var(--Secondary-Color); /*master border*/
+--border2: 2px solid var(--Third-Color); /*border 2*/
+--border3: 2px solid rgb(90,0,0); /*border 3*/
+
+/*Others variables*/
+/*Radial status*/
+--rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
+--rs-medium-spacing: 0.1px; /* Gap between avatar and status for User popout | MUST end in px */
+--rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
+--rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+--rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+--rs-online-color: #21df00; /* Colour for online status */
+--rs-idle-color: #ffffff; /* Colour for idle status */
+--rs-dnd-color: #ee0000; /* Colour for dnd status */
+--rs-offline-color: #636b75; /* Colour for offline status */
+--rs-streaming-color: #b300fa; /* Colour for streaming status */
+--rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+/*edited only this one below*/
+--rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 }
 
 /*Discord's global variables copy-paste and edited*/
@@ -121,6 +157,17 @@ div[class*="typeWindows-"]::after {
   --deprecated-text-input-border-disabled: #202225;
   --deprecated-text-input-prefix: #dcddde;
 }
+/*Theme auto-update (Thanks Tropical#4355)*/
+:root {
+  --theme-version: "38.5";
+}
+.bd-addon-card[id="draconicXYroles-card"] .bd-version {
+  font-size: 0;
+}
+.bd-addon-card[id="draconicXYroles-card"] .bd-version::after {
+  content: var(--theme-version)" ";
+  font-size: 14px;
+}
 /*
 $$$$$$$\                      $$\                                                               $$\ 
 $$  __$$\                     $$ |                                                              $$ |
@@ -168,6 +215,41 @@ $$ |  $$ |$$ |  $$ |$$ |$$ |$$ |  $$ | \____$$\
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)) , var(--background-black-and-white1)50% 50%/cover no-repeat!important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Guild Roles*/
+/*Roles Column Margins*/
+.rolesList-3uZoaa {
+  margin-bottom: 20px;
+}
+/*Roles margin left-right*/
+.role-2TIOKu {
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--background-secondary-alt);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 22px;
+  margin: 0 4px 4px 0;
+  padding: 4px;
+  margin-right: 200px;
+}
+/*Roles card in guilds*/
+.userPopout-2j1gM4 {
+  -webkit-box-shadow: var(--elevation-high);
+  box-shadow: var(--elevation-high);
+  background-color: var(--background-floating);
+  border-radius: 8px;
+  border-color: var(--Main-Color);
+  overflow: hidden;
+  max-height: calc(100vh - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 /* #################### Guilds unread & mentioned popouts #################### */
@@ -225,86 +307,6 @@ $$ |  $$ |$$ |  $$ |$$ |$$ |$$ |  $$ | \____$$\
   border: var(--border2);
   border-radius: 15px;
 }
-
-/*Guild Roles*/
-  /* Default permissions */
-  .container-_phMUq {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: transparent;
-    color: var(--Main-Color);
-    border-radius: 0px;
-    padding: 16px 24px 16px 16px;
-    cursor: pointer;
-  }
-  .container-_phMUq:hover {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: var(--Black-Color);
-    color: var(--Main-Color);
-    border-radius: 0px;
-    padding: 16px 24px 16px 16px;
-    cursor: pointer;
-  }
-  /* Search Roles */
-  .container-cMG81i {
-    border-radius: 4px;
-    overflow: hidden;
-    background-color: transparent;
-  }
-  /*Roles Column Margins*/
-  .rolesList-3uZoaa {
-    margin-bottom: 20px;
-  }
-  /*Roles margin left-right*/
-  .role-2TIOKu {
-    font-size: 12px;
-    font-weight: 500;
-    background: var(--background-secondary-alt);
-    border-radius: 4px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 22px;
-    margin: 0 4px 4px 0;
-    padding: 4px;
-    margin-right: 200px;
-  }
-  /*Roles card in guilds*/
-  .userPopout-2j1gM4 {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high);
-    background-color: var(--background-floating);
-    border-radius: 8px;
-    border-color: var(--Main-Color);
-    overflow: hidden;
-    max-height: calc(100vh - 20px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  /*+ add roles popout*/
-  .container-2O1UgZ {
-    width: 250px;
-    overflow: hidden;
-    border-radius: 4px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 8px;
-    background-color: var(--Black);
-    border: var(--border2);
-  }
 /*
  $$$$$$\                                                            $$$$$$\              $$\       $$\     $$\                               
 $$  __$$\                                                          $$  __$$\             $$ |      $$ |    \__|                              

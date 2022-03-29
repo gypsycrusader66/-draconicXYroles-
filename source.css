@@ -226,6 +226,85 @@ $$ |  $$ |$$ |  $$ |$$ |$$ |$$ |  $$ | \____$$\
   border-radius: 15px;
 }
 
+/*Guild Roles*/
+  /* Default permissions */
+  .container-_phMUq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: transparent;
+    color: var(--Main-Color);
+    border-radius: 0px;
+    padding: 16px 24px 16px 16px;
+    cursor: pointer;
+  }
+  .container-_phMUq:hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--Black-Color);
+    color: var(--Main-Color);
+    border-radius: 0px;
+    padding: 16px 24px 16px 16px;
+    cursor: pointer;
+  }
+  /* Search Roles */
+  .container-cMG81i {
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  /*Roles Column Margins*/
+  .rolesList-3uZoaa {
+    margin-bottom: 20px;
+  }
+  /*Roles margin left-right*/
+  .role-2TIOKu {
+    font-size: 12px;
+    font-weight: 500;
+    background: var(--background-secondary-alt);
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 22px;
+    margin: 0 4px 4px 0;
+    padding: 4px;
+    margin-right: 200px;
+  }
+  /*Roles card in guilds*/
+  .userPopout-2j1gM4 {
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    border-color: var(--Main-Color);
+    overflow: hidden;
+    max-height: calc(100vh - 20px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /*+ add roles popout*/
+  .container-2O1UgZ {
+    width: 250px;
+    overflow: hidden;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: var(--Black);
+    border: var(--border2);
+  }
 /*
  $$$$$$\                                                            $$$$$$\              $$\       $$\     $$\                               
 $$  __$$\                                                          $$  __$$\             $$ |      $$ |    \__|                              

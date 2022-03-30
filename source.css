@@ -9,7 +9,7 @@ $$  /   \$$ |\$$$$$$$ |  \$$$$  |\$$$$$$$\ $$ |      $$ | $$ | $$ |\$$$$$$$ |$$ 
 \__/     \__| \_______|   \____/  \_______|\__|      \__| \__| \__| \_______|\__|      \__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: 'DRACONXYROLES version 38.5';
+  content: 'DRACONICXYROLES version 38.6';
   font-weight: bold;
   line-height: 30px;
   color: var(--Main-Color);
@@ -22,6 +22,17 @@ div[class*="typeWindows-"]::after {
   height: 20px;
   background: transparent;
   z-index: -1;
+}
+/*Theme auto-update (Thanks Tropical#4355)*/
+:root {
+  --theme-version: "38.6";
+}
+.bd-addon-card[id="draconicXYroles-card"] .bd-version {
+  font-size: 0;
+}
+.bd-addon-card[id="draconicXYroles-card"] .bd-version::after {
+  content: var(--theme-version)" ";
+  font-size: 14px;
 }
 :root {
 /*Global variables that were made/edited by me*/
@@ -156,17 +167,6 @@ div[class*="typeWindows-"]::after {
   --deprecated-text-input-border-hover: #040405;
   --deprecated-text-input-border-disabled: #202225;
   --deprecated-text-input-prefix: #dcddde;
-}
-/*Theme auto-update (Thanks Tropical#4355)*/
-:root {
-  --theme-version: "38.5";
-}
-.bd-addon-card[id="draconicXYroles-card"] .bd-version {
-  font-size: 0;
-}
-.bd-addon-card[id="draconicXYroles-card"] .bd-version::after {
-  content: var(--theme-version)" ";
-  font-size: 14px;
 }
 /*
 $$$$$$$\                      $$\                                                               $$\ 

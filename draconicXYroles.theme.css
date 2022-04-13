@@ -1,12 +1,16 @@
 /**
  * @name draconicXYroles
  * @author dey@elitegamers.ro
- * @version ersion 38.6
+ * @version ersion 39
  * @description Want something different? DraconicXYroles is the choice.
  *
  * @website https://github.com/ytddey/
  * @source https://github.com/ytddey/-draconicXYroles-/blob/master/source.css
  
 **/
+/*Source draconicXYroles*/
 @import url('https://ytddey.github.io/-draconicXYroles-/source.css');
+/*Radial status*/
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+/*BD Addon Mini List by Disease#3749*/
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
